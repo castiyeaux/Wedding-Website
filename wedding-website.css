@@ -1,17 +1,29 @@
 .main-nav {
 
-
+    
 
 }
 
 .no-touch-nav {
 
-
+    
 
 }
 
 ul {
 
+    color: black;
     list-style-type: none;
+
+}
+
+body {
+
+    color: black;
+    background-color: aliceblue;
+    background-image: url("colorful-mountains.jpg");
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 100% 200%;
 
 }
