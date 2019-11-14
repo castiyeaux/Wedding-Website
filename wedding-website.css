@@ -18,12 +18,13 @@ ul.nav1 {
     color: whitesmoke;
     padding: 0;
     margin: 0;
+    display: inline;
 
 }
 
 li.nav {
 
-    display: inline-flex;
+    display: inline;
     text-align: center;
     border-right: 1px solid #bbb;
 
@@ -39,9 +40,14 @@ li.nav a {
 
     display: inline;
     color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150%;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    text-shadow:  2px 2px 8px #bbb;
+    padding: 14px 16px;
 
 }
 
@@ -52,37 +58,37 @@ li.nav a:hover {
 
 }
 
-.names {
-
-}
-
 #expandable {
 
     color: whitesmoke;
     position: initial;
     text-align: center;
     font-size: 50px;
-    line-height: 70px;
+    line-height: 50px;
 
 }
 
-.date .location {
+li.nav1 {
 
-    display: inline;
-    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #bbb;
+    float: left;
+    padding: 10px;
 
 }
 
-.hashtag {
+#hashtag {
 
-    text-align: right;
+    float: right;
 
 }
 
 #primary-slogan {
 
-    text-align: center;
+    color: black;
     font-size: 500%;
+    text-align: center;
     text-shadow: 2px 2px 8px whitesmoke;
 
 }
@@ -97,6 +103,7 @@ li.nav a:hover {
 body {
 
     height: 2000px;
+    color: whitesmoke;
     background-color: rgb(5, 58, 105);
     background-image: url("red-blue-galaxy.jpg");
     background-position: left top;
