@@ -1,43 +1,74 @@
-<!DOCTYPE <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
     <head>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Castle Registry</title>
+        <title>Castle Of Two</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="wedding-website.css">
+        <link href="//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS" rel="stylesheet" type="text/css"/>
+
     </head>
+
     <body>
+
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <div class="main-nav">
-            <ul class="nav">
-                <li class="name">Emma & Andrea</li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="travel.html">Travel</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a href="registry.html">Registry</a></li><!--https://www.zola.com/wedding/emmaandandrea/registry-->
-                <li><a href="faqs.html">FAQs</a></li>
-            </ul>
-        </div>
-    
-        <div class="noTouch-nav">
-            <ul class="nav1">
-                <li class="date">June 20, 2020</li>
-                <li class="location">New Orleans, LA</li>
-                <li class="hashtag">#CastleOfTwo</li>
-                <li class="names"><a href="#top"></a>Emma & Andrea</li>
-            </ul>
-        </div>
         
-        <p>lol just Venmo us please</p>
+        <script src="wedding.js"></script><!--put in header??-->
 
-        <script src="" async defer></script>
+        <header class="header">
+
+            <div class="noTouch-nav">
+                <ul class="nav1">
+                    <li class="nav1" id="date">JUNE 20, 2020</li>
+                    <li class="nav1" id="location">NEW ORLEANS, LA</li>
+                    <li class="nav1" id="hashtag">#CASTLEOFTWO</li>
+                </ul>
+            </div>
+
+            <p class="names" id="expandable"><a href="#top"></a>EMMA & ANDREA<br>CASTILLO</p>
+
+            <div class="main-nav">
+                <ul class="nav">
+                        
+                    <li class="nav"><a href="index.html">HOME</a></li>
+                    <li class="nav"><a href="travel.html">TRAVEL</a></li>
+                    <li class="nav"><a href="schedule.html">SCHEDULE</a></li>
+                    <li class="nav"><a class="active" href="registry.html">REGISTRY</a></li><!--https://www.zola.com/wedding/emmaandandrea/registry-->
+                    <li class="nav"><a href="faqs.html">FAQs</a></li>
+                        
+                </ul>
+            </div>
+
+        </header>
+
+        <main>
+        
+            <p id="registryP">Andrea made this site as a personal project/something for her digital portfolio.<br>
+                However, she can't master everything (Like [secure] financial transactions).<br>
+                <br>
+                Clicking the link below will open a new window to our registry on original wedding website through Zola.<br>
+                <br>
+                But, this totally cool site will be your reference for everything else related to our reception!</p>
+                <br>
+                <br>
+                <p id="zreglink"><a href="https://www.zola.com/wedding/emmaandandrea/registry" target=_blank>Zola Registry</a></p>
+
+        </main>
+
+        <footer>
+
+        </footer>
+
     </body>
+
 </html>

@@ -145,6 +145,42 @@ li.nav1 {
 
 }
 
+#registryP {
+
+    text-align: center;
+
+}
+
+#zreglink {
+
+    text-align: center;
+
+}
+
+#zreglink a {
+
+    color: whitesmoke;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow:  2px 2px 8px #bbb;
+    padding: 14px 16px;
+
+}
+
+#zreglink a:hover {
+
+    color: yellow;
+
+}
+
+h1 {
+
+    text-align: center;
+
+}
+
 body {
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
