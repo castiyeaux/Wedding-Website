@@ -1,3 +1,26 @@
+.header {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    border: 10px solid whitesmoke;
+
+}
+
+@import url("//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS");
+
+@font-face {
+
+    font-family: "STARWARS"; 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg");
+
+}
+
 ul {
 
     list-style-type: none;
@@ -24,7 +47,8 @@ ul.nav1 {
 
 li.nav {
 
-    display: inline;
+    display: inline-block;
+    width: 200px;
     text-align: center;
     border-right: 1px solid #bbb;
 
@@ -40,7 +64,7 @@ li.nav a {
 
     display: inline;
     color: whitesmoke;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 150%;
@@ -54,13 +78,24 @@ li.nav a {
 li.nav a:hover {
 
     background-color: rgba(0, 0, 102, 0.623);
-    color: #A6A6A6;
+    color: yellow;
+
+}
+
+.names {
+
+    padding: 0px;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow:  2px 2px 8px #bbb;
 
 }
 
 #expandable {
 
-    color: whitesmoke;
     position: initial;
     text-align: center;
     font-size: 50px;
@@ -70,11 +105,11 @@ li.nav a:hover {
 
 li.nav1 {
 
-    font-family: 'Courier New', Courier, monospace;
+    font-family: STARWARS, 'Courier New', Courier, monospace;
     font-weight: bold;
     text-shadow: 2px 2px 8px #bbb;
     float: left;
-    padding: 10px;
+    padding: 10;
 
 }
 
@@ -105,10 +140,9 @@ body {
     height: 2000px;
     color: whitesmoke;
     background-color: rgb(5, 58, 105);
-    background-image: url("red-blue-galaxy.jpg");
+    background-image: url("Backgrounds/black-galaxy.jpg");
     background-position: left top;
     background-attachment: scroll;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background-size: 50% 50%;
 
 }
