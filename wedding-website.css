@@ -82,6 +82,13 @@ li.nav a:hover {
 
 }
 
+li.nav a.active {
+
+    background-color: rgba(0, 0, 102, 0.623);
+    color: yellow;
+
+}
+
 .names {
 
     padding: 0px;
@@ -122,21 +129,25 @@ li.nav1 {
 #primary-slogan {
 
     color: whitesmoke;
-    font-size: 500%;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 300%;
+    text-transform: uppercase;
     text-align: center;
-    text-shadow: 2px 2px 8px whitesmoke;
 
 }
 
 #secondary-slogan {
 
     text-align: center;
+    text-transform: uppercase;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
     font-size: 200%;
 
 }
 
 body {
 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 2000px;
     color: whitesmoke;
     background-color: rgb(5, 58, 105);
