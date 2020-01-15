@@ -1,11 +1,12 @@
-$(function() {
+//from w3 schools
+window.onscroll = function() {scrollFunction()};
 
-    $(window).scroll(function() {
-
-        var mass = Math.max(20, 50-0.1*$(this).scrollTop()) + 'px';
-
-        $('#expandable').css({'font-size': mass, 'line-height': mass});
-
-    });
-
-});
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("nav").style.padding = "30px 10px";
+    //document.getElementById("logo").style.fontSize = "25px";
+  } else {
+    document.getElementById("nav").style.padding = "80px 10px";
+    //document.getElementById("logo").style.fontSize = "35px";
+  }
+}
