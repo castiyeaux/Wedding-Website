@@ -12,9 +12,10 @@
         <title>Castle Of Two</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="wedding-website.css">
+        <!--link rel="stylesheet" href="wedding-website.css">-->
+        <link rel="stylesheet" href="testCSS.css">
         <link href="//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS" rel="stylesheet" type="text/css"/>
-        <script type="text/javascript" src="wedding.js"></script><!--put in header??-->
+        <!--<script type="text/javascript" src="wedding.js"></script> put in header?? or at bottom before /body??? #spoiler YES at bottom before /body-->
 
     </head>
 
@@ -27,33 +28,42 @@
         <!-- <script>window.onscroll = function() {scrollFunction()};</script> -->
         <script>scrollFunction(); </script>
 
-        <header class="header">
-            <!--<nav>-->
-                <div class="noTouch-nav">
-                    <ul class="nav1">
-                        <li class="nav1" id="date">JUNE 20, 2020</li>
-                        <li class="nav1" id="location">NEW ORLEANS, LA</li>
-                        <li class="nav1" id="hashtag">#CASTLEOFTWO</li>
-                    </ul>
-                </div>
+        <nav>
+            <div class="noTouch-nav">
+                <ul class="nav1">
+                    <li class="nav1" id="date">JUNE 20, 2020</li>
+                    <li class="nav1" id="location">NEW ORLEANS, LA</li>
+                    <li class="nav1" id="hashtag">#CASTLEOFTWO</li>
+                </ul>
+            </div>
 
-                    <p class="names" id="expandable"><a href="#top"></a>EMMA & ANDREA<br>CASTILLO</p>
+            <div class="logo">
+                <!-- <p class="names" id="expandable"><a href="#top"></a>EMMA & ANDREA<br>CASTILLO</p> -->
+                <p class="full-text" id="expandable"><a href="#top">EMMA & ANDREA<br>CASTILLO</p>
+                <p class="short-text" id="expandable"><a href="#top"></a>The<br>Castillos</p>
+            </div>
 
-                <div class="main-nav">
-                    <ul class="nav">
+            <div class="main-nav">
+                <ul class="nav-links">
                         
-                        <li class="nav"><a class="active" href="index.html">HOME</a></li>
-                        <li class="nav"><a href="travel.html">TRAVEL</a></li>
-                        <li class="nav"><a href="schedule.html">SCHEDULE</a></li>
-                        <li class="nav"><a href="registry.html">REGISTRY</a></li><!--https://www.zola.com/wedding/emmaandandrea/registry-->
-                        <li class="nav"><a href="rsvp.html">RSVP</a></li>
-                        <li class="nav"><a href="faqs.html">FAQs</a></li>
-                        <li class="nav"><a href="site-comments.html">SITE</a></li>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="travel.html">TRAVEL</a></li>
+                    <li><a href="schedule.html">SCHEDULE</a></li>
+                    <li><a href="registry.html">REGISTRY</a></li><!--https://www.zola.com/wedding/emmaandandrea/registry-->
+                    <li><a href="rsvp.html">RSVP</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="site-comments.html">SITE</a></li>
+                    <li><a class="active" href="testIndex.html">TEST HOME</a></li>
                         
-                    </ul>
-                </div>
-            <!--</nav>-->
-        </header>
+                </ul>
+            </div>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
 
         <main>
 
@@ -103,6 +113,8 @@
              black-ceramic.jpg from https://www.pexels.com/photo/pavement-2117938/
 
         -->
+
+        <script type="text/javascript" src="wedding.js"></script>
 
     </body>
 

@@ -1,0 +1,306 @@
+@import url("//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS");
+
+@font-face {
+
+    font-family: "STARWARS"; 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg");
+
+}
+
+nav {
+
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    border: 10px solid whitesmoke;
+    background-image: url("Backgrounds/black-galaxy.jpg");
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 50% 50%;
+    overflow: visible;
+
+}
+
+.logo {
+
+    padding: 0px;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #bbb;
+    
+}
+
+.short-text a{
+
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+.full-text a {
+
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+#expandable {
+
+    position: initial;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+
+}
+
+.nav-links {
+
+    display: flex;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+ul.nav-links li {
+
+    display: inline-flex;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    width: 100%;
+
+    border-right: 1px solid #bbb;
+
+}
+
+.nav-links li:first-child {
+
+    border-left: 1px solid #bbb;
+
+}
+
+ul.nav-links li a {
+
+    display: inline;
+    color: whitesmoke;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 150%;
+    text-align: center;
+    text-decoration: none;
+    text-shadow:  2px 2px 8px #bbb;
+    padding: 14px 16px;
+    margin: auto;
+
+}
+
+.nav-links li a:hover {
+
+    background-color: rgba(0, 0, 102, 0.623);
+    color: yellow;
+
+}
+
+.nav-links li a.active {
+
+    background-color: rgba(0, 0, 102, 0.623);
+    color: yellow;
+
+}
+
+ul {
+
+    list-style-type: none;
+
+}
+
+ul.nav-links {
+
+    color: black;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+
+}
+
+ul.nav1 {
+
+    color: whitesmoke;
+    display: inline;
+    padding: 0;
+    margin: 0;
+
+}
+
+li.nav1 {
+
+    font-family: STARWARS, 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #bbb;
+    float: left;
+    padding: 10px;
+
+}
+
+#hashtag {
+
+    float: right;
+
+}
+
+.short-text {
+
+    display: none;
+
+}
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.burger div {
+
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width:768px) {
+
+    .short-text {
+
+        display: inline-block;
+
+    }
+
+    .full-text {
+
+        display: none;
+
+    }
+
+    .nav1 {
+
+        display: none;
+
+    }
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    .nav-links {
+
+        position: absolute;
+        right: -10px;
+        height: 75vh;
+        top: 23vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        overflow: hidden;
+        transform: translateX(110%);
+        transition: transform 0.5s ease-in;
+        background-color: black;
+
+    }
+
+    .nav-links li {
+
+        opacity: 0;
+        border-right: none;
+
+    }
+
+    .nav-links li:first-child {
+
+        border-left: none;
+    
+    }
+
+    .burger {
+
+        display: block;
+        position: absolute;
+        right: 5px;
+        top: 23vh;
+
+    }
+
+}
+
+.nav-active {
+
+    transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade {
+
+    from {
+
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to {
+
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+
+}
+
+.toggle-active .line1 {
+
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle-active .line2 {
+
+    opacity: 0;
+
+}
+
+.toggle-active .line3 {
+
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+body {
+
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    color: whitesmoke;
+    background-color: black;
+    background-image: url("Backgrounds/black-galaxy.jpg");
+    background-position: left top;
+    background-attachment: scroll;
+    background-size: 50% 50%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}

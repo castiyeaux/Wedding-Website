@@ -192,9 +192,41 @@ h1 {
 
 }
 
+@media screen and (max-width:768px) {
+
+    .nav1 {
+
+        display: none;
+
+    }
+
+    .nav {
+
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        overflow: scroll;
+        
+
+    }
+
+    .nav li {
+
+        opacity: 100;
+
+    }
+
+}
+
 body {
 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: STARWARS, Verdana, Geneva, Tahoma, sans-serif;
     height: 2000px;
     color: whitesmoke;
     background-color: black;
