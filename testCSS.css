@@ -241,7 +241,7 @@ li.nav1 {
     .burger {
 
         display: block;
-        position: absolute;
+        position: fixed;
         right: 5px;
         top: 23vh;
 

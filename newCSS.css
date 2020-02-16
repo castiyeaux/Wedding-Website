@@ -1,0 +1,304 @@
+@import url("//db.onlinewebfonts.com/c/c00548f5d217ed324ae9096051927001?family=STARWARS");
+
+@font-face {
+
+    font-family: "STARWARS"; 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); 
+    src: url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), 
+        url("//db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg");
+
+}
+
+*{
+
+    margin: 0px;
+
+    box-sizing: border-box;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(20, 20, 20);
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-shadow: 2px 2px 8px #bbb;
+
+}
+
+.logo {
+
+    color: whitesmoke;
+    font-size: 22px;
+    text-shadow: 2px 2px 8px #bbb;
+
+}
+
+.nav-links {
+
+    display: flex;
+    justify-content: space-around;
+    width: 35%;
+
+}
+
+.nav-links li {
+
+    list-style: none;
+
+}
+
+.nav-links a {
+
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+.nav-links li a:hover {
+
+    background-color: rgba(0, 0, 102, 0.623);
+    color: yellow;
+
+}
+
+.burger {
+
+    display: none;
+    cursor: pointer;
+
+}
+
+.burger div {
+
+    width: 25px;
+    height: 3px;
+    background-color: whitesmoke;
+    margin: 5px;
+    transition: all 0.3s ease;
+
+}
+
+@media screen and (max-width: 1300px) {
+
+    .nav-links {
+
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+    .nav-links {
+
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn {
+
+        width: 100%;
+        padding: 0;
+
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+
+        overflow-x: hidden;
+
+    }
+
+    .nav-links {
+
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+
+    }
+
+    .nav-links li {
+
+        opacity: 0;
+
+    }
+
+    .nav-links a {
+
+        font-size: 20px;
+
+    }
+
+    .burger {
+
+        display: block;
+
+    }
+
+}
+
+.nav-active {
+
+    transform: translateX(0%);
+
+}
+
+@keyframes navLinkFade {
+
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+
+}
+
+.toggle-active .line1 {
+
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle-active .line2 {
+
+    opacity: 0;
+
+}
+
+.toggle-active .line3 {
+
+    transform: rotate(45deg) translate(-5px, -6px);
+
+}
+
+body {
+
+    background-color: black;
+    background-image: url("Backgrounds/stars-wide.jpg");
+    color: rgba(0, 0, 102, 0.623);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+
+}
+
+h1 {
+
+    color: whitesmoke;
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+
+    color: rgba(0, 0, 102, 0.623);
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+h5 {
+
+    color: rgba(0, 0, 102, 0.623);
+    font-family: STARWARS, Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 8px #bbb;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+.leftcolumn {
+
+    float: left;
+    width: 100%;
+
+}
+
+.firstimg {
+
+    background-color: #aaa;
+    width: 100%;
+    padding: 25px;
+    
+    box-sizing: border-box;
+
+}
+
+.card {
+
+    background-color: whitesmoke;
+    padding: 20px;
+    margin-top: 20px;
+
+    height: 550px;
+
+}
+
+.card .cardcontent {
+
+    height: auto;
+
+}
+
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+.firstannouncement {
+
+    margin-top: -300px;
+    margin-left: 500px;
+    box-sizing: content-box;
+
+}
+
+footer {
+
+    color: black;
+    background-color: #bbb;
+    font-size: 14px;
+    margin-top: 20px;
+
+}
