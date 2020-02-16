@@ -26,7 +26,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     min-height: 8vh;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(32, 32, 32);
     font-family: STARWARS, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -99,6 +99,8 @@ nav {
     
     }
 
+    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,6 +113,8 @@ nav {
     
     }
 
+    
+
 }
 
 @media screen and (max-width: 800px) {
@@ -121,6 +125,8 @@ nav {
         padding: 0;
 
     }
+
+    
 
 }
 
@@ -163,6 +169,41 @@ nav {
     .burger {
 
         display: block;
+
+    }
+
+    .card {
+
+        overflow: auto;
+
+    }
+
+    .cardcontent1 {
+
+        margin: auto;
+
+    }
+
+    .cardcontent2 {
+
+        display: inline-block;
+        flex-direction: column;
+
+    }
+
+    img {
+
+        width: 300;
+        height: 200;
+
+    }
+
+    .firstannouncement {
+
+        position: relative;
+        margin: auto;
+        width: 100%;
+        padding: 70px 0;
 
     }
 
@@ -232,6 +273,7 @@ h2 {
     text-shadow: 2px 2px 8px #bbb;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
 
 }
 
@@ -242,6 +284,7 @@ h5 {
     text-shadow: 2px 2px 8px #bbb;
     text-transform: uppercase;
     letter-spacing: 1px;
+    position: relative;
 
 }
 
@@ -252,29 +295,44 @@ h5 {
 
 }
 
-.firstimg {
-
-    background-color: #aaa;
-    width: 100%;
-    padding: 25px;
-    
-    box-sizing: border-box;
-
-}
-
 .card {
 
     background-color: whitesmoke;
     padding: 20px;
     margin-top: 20px;
+    overflow: auto;
 
     height: 550px;
+    width: 100%;
 
 }
 
-.card .cardcontent {
+.cardcontent2 {
 
-    height: auto;
+    display: inline-flex;
+    position: relative;
+
+}
+
+.firstimg {
+
+    background-color: #aaa;
+    padding: 25px;
+    height: 350px;
+    width: 450px;
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin-top: 50px;
+    position: relative;
+    float: left;
+
+}
+
+.firstannouncement {
+
+    position: relative;
+    float: right;
 
 }
 
@@ -283,14 +341,6 @@ h5 {
     content: "";
     display: table;
     clear: both;
-
-}
-
-.firstannouncement {
-
-    margin-top: -300px;
-    margin-left: 500px;
-    box-sizing: content-box;
 
 }
 
