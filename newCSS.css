@@ -311,7 +311,7 @@ h5 {
 
 }
 
-.card {
+.card .cardcontent1 {
 
     background-color: whitesmoke;
     padding: 20px;
@@ -343,7 +343,7 @@ h5 {
 
 }
 
-.firstannouncement {
+.announcement {
 
     position: relative;
     float: right;
